@@ -26,8 +26,18 @@ $ cd '/catkin_ws/src/crazyflie_ros/crazyflie_2.0/crazyflie_gazebo/scripts'
 
 $ ls
 
-$ python vertical_trajectory.py
+$ python vertical_trajectory.py 
 
 
+## Real time Human in the loop control of DJI Tello EDU drone
+* Multi agent system consists of master controller sending signals to slaves.
+* In this project, Laptop acts as a master and Tello EDU drone would be the slave.
+* Tasks to be completed: high level trajectory, waypoint navigation, helix trajectory.
 
 
+### Steps to run python scripts
+* $ python3.12 -m venv venv
+* $ source venv/bin/activate
+* $ pip install djitellopy
+* $ pip freeze > requirements.txt
+* $ python drone_simple.py
